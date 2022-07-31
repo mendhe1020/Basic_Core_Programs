@@ -1,35 +1,21 @@
 ﻿
-namespace Swap_Number
+namespace VoweConsonant
 {
-    class SwapNum
+    class VowelOrConsonant
     {
         public static void Main(string[] args)
         {
-            int a = 10;
-            int b = 20;
+            Console.WriteLine("Enter Any Alphabet");
+            Char Alphabet = Convert.ToChar(Console.ReadLine());
 
-            Console.WriteLine("Before swapping a={0},b={1}", a, b);
-
-            a = a * b;
-            b = a / b;
-            a = a / b;
-
-            Console.WriteLine("After swapping a={0},b={1}", a, b);
-
-
-            int d = 10;
-            int e = 20;
-            int temp;
-
-            Console.WriteLine("Before swapping d={0},e={1}", a, b);
-
-            temp = d;
-            d = e;
-            d = temp;
-
-            Console.WriteLine("After swapping d={0},e={1}", d, e);
-
-
+            if(Alphabet=='a'|| Alphabet=='e'|| Alphabet=='i' || Alphabet=='o'|| Alphabet=='A'|| Alphabet=='E'|| Alphabet=='I'|| Alphabet=='O'|| Alphabet=='U')
+            {
+                Console.WriteLine("Alphabet is Vowel");
+            }
+            else
+            {
+                Console.WriteLine("Alphabet is Consonant");
+            }
         }
     }
 }
