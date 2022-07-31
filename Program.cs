@@ -1,21 +1,34 @@
 ﻿
-namespace Even_Odd
+namespace Swap_Number
 {
-    class EvenOdd
+    class SwapNum
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter The Num");
-            int num = Convert.ToInt32(Console.ReadLine());
-            if (num%2==0)
-            {
-                Console.WriteLine("even");
-            }
-            else
-            {
-                Console.WriteLine("odd");
-            }
-            Console.ReadLine();
+            int a = 10;
+            int b = 20;
+
+            Console.WriteLine("Before swapping a={0},b={1}", a, b);
+
+            a = a * b;
+            b = a / b;
+            a = a / b;
+
+            Console.WriteLine("After swapping a={0},b={1}", a, b);
+
+
+            int d = 10;
+            int e = 20;
+            int temp;
+
+            Console.WriteLine("Before swapping d={0},e={1}", a, b);
+
+            temp = d;
+            d = e;
+            d = temp;
+
+            Console.WriteLine("After swapping d={0},e={1}", d, e);
+
 
         }
     }
