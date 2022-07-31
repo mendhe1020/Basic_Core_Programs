@@ -1,21 +1,12 @@
 ﻿
-namespace LeapYear
-{
-    class Program
-    {
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Enter year:-");
-            int year = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the name");
+string username = Console.ReadLine();
 
-            if ((year % 4 == 0) && (year % 100 != 0 || (year % 400 == 0)))
-            {
-                Console.WriteLine(year + "is a leap year");
-            }
-            else
-            {
-                Console.WriteLine(year + "is not a leap year");
-            }
-        }
-    }
+if (username.Length > 3)
+{
+    Console.WriteLine("Hello " + username + " ,How are you?");
+}
+else
+{
+    Console.WriteLine("the username has minimum 3 characters");
 }
