@@ -1,20 +1,25 @@
 ﻿
-namespace VoweConsonant
+namespace LargestNumber
 {
-    class VowelOrConsonant
+    class Largest
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter Any Alphabet");
-            Char Alphabet = Convert.ToChar(Console.ReadLine());
+            int a = 1;
+            int b = 2;
+            int c = 3;
 
-            if(Alphabet=='a'|| Alphabet=='e'|| Alphabet=='i' || Alphabet=='o'|| Alphabet=='A'|| Alphabet=='E'|| Alphabet=='I'|| Alphabet=='O'|| Alphabet=='U')
+            if (a>b&&a>c)
             {
-                Console.WriteLine("Alphabet is Vowel");
+                Console.WriteLine("a is greater");
+            }
+            else if(b>c&&b>a)
+            {
+                Console.WriteLine("b is greater");
             }
             else
             {
-                Console.WriteLine("Alphabet is Consonant");
+                Console.WriteLine("c is greater");
             }
         }
     }
